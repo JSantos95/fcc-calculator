@@ -64,10 +64,10 @@ export const operationArray = [
   },
   {
     id: "decimal",
-    num: ".",
+    func: "."
   },
   {
     id: "equal",
-    num: "="
+    func: "="
   },
 ]
