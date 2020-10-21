@@ -1,19 +1,15 @@
 export const numberArray = [
   {
-    id: "zero",
-    num: 0
+    id: "seven",
+    num: 7
   },
   {
-    id: "one",
-    num: 1
+    id: "eight",
+    num: 8
   },
   {
-    id: "two",
-    num: 2
-  },
-  {
-    id: "three",
-    num: 3
+    id: "nine",
+    num: 9
   },
   {
     id: "four",
@@ -28,16 +24,20 @@ export const numberArray = [
     num: 6
   },
   {
-    id: "seven",
-    num: 7
+    id: "one",
+    num: 1
   },
   {
-    id: "eight",
-    num: 8
+    id: "two",
+    num: 2
   },
   {
-    id: "nine",
-    num: 9
+    id: "three",
+    num: 3
+  },
+  {
+    id: "zero",
+    num: 0
   }
 ]
 
@@ -52,7 +52,7 @@ export const operationArray = [
   },
   {
     id: "multiply",
-    func: "*"
+    func: "x"
   },
   {
     id: "subtract",
