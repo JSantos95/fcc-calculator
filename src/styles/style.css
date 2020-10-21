@@ -1,32 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .cal {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  background-color: #A2AEBB;
+  font-family: 'Righteous', cursive;
 
-  --main-width: 20rem;
-  --main-height: 24rem;
-  --singel-height: 5rem;
+  --main-width: 20.3rem;
+  --main-height: 25.4rem;
+  --single-height: 5rem;
 }
 
 .cal-board {
-  border: 5px solid green;
+  color: white;
+  border: 5px solid #080808;
+  position: relative;
 }
 
 .cal-value {
-  height: var(--singel-height);
+  height: var(--single-height);
   text-align: right;
+  background-color: #080808;
+  font-size: 2rem;
+}
+.cal-value--array {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .cal-buttons {
   width: var(--main-width);
   height: var(--main-height);
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(5, 20%);
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  grid-gap: .1rem;
+  background-color: #080808;
 }
 #clear {
   grid-column-start: 1;
   grid-column-end: 3;
+  background-color: #D00000;
 }
 #zero {
   grid-column-start: 1;
@@ -37,6 +55,7 @@
   grid-column-start: 4;
   grid-row-start: 4;
   grid-row-end: span 2;
+  background-color: #3F88C5;
 }
 #decimal {
   grid-column-start: 3;
@@ -45,12 +64,35 @@
 #add {
   grid-column-start: 4;
   grid-row-start: 3;
+  background-color: #233F57;
 }
 #subtract {
   grid-column-start: 4;
   grid-row-start: 2;
+  background-color: #233F57;
+}
+#divide {
+  background-color: #233F57;
+}
+#multiply {
+  background-color: #233F57;
 }
 
-.cal-buttons--actual {
+.cal-button--actual {
+  border-radius: 0;
+  border: none;
+  font-size: 1.8rem;
+  font-family: 'Righteous', cursive;
+  background-color: #1C3144;
+  color: white;
+  transition: all .3s;
+}
 
+.cal-button--actual:hover {
+  color: #080808;
+  border: 1px solid white;
+}
+
+.cal-button--actual:active {
+  transform: scale(1.1);
 }
