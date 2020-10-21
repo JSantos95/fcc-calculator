@@ -1,0 +1,56 @@
+.cal {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  --main-width: 20rem;
+  --main-height: 24rem;
+  --singel-height: 5rem;
+}
+
+.cal-board {
+  border: 5px solid green;
+}
+
+.cal-value {
+  height: var(--singel-height);
+  text-align: right;
+}
+
+.cal-buttons {
+  width: var(--main-width);
+  height: var(--main-height);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+}
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+}
+#equal {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  grid-row-end: span 2;
+}
+#decimal {
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+#add {
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+#subtract {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.cal-buttons--actual {
+
+}
