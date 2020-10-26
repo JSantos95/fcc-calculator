@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { NUMBER, OP, CLEAR, DEC, EQ } from '../actions/actionTypes';
 
 const isOperator = (arr) => {
-  const val = arr.length-1;
+  const val = arr[arr.length-1];
   if (val === 'x' || val === '+' || val === '/' || val === '-'){
     return true;
   } else
