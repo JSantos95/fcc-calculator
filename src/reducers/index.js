@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import { NUMBER, OP, CLEAR, DEC, EQ } from '../actions/actionTypes';
 
 const isOperator = (arr) => {
@@ -32,6 +31,4 @@ const calValue = (value = [0], action) => {
   }
 }
 
-export default combineReducers({
-  val: calValue
-})
+export default calValue;
