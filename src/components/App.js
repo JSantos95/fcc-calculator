@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import CalButtons from './CalButtons';
+import Output from './Output';
 import '../styles/style.css';
 import {numberArray, operationArray} from './buttonArrays';
 
 const App = () => {
-
-  const [history, setHistory] = useState([0]);
 
   const funcButtons = operationArray.map((obj) =>
     <CalButtons
@@ -24,10 +23,7 @@ const App = () => {
     <div className="cal">
       <div className="cal-board">
 
-        <div className="cal-value" id="display">
-          <div className="cal-value--array">{history}</div>
-          <div className="cal-value--current">{history[0]}</div>
-        </div>
+        <Output />
 
         <div className="cal-buttons">
           {funcButtons}
