@@ -24,15 +24,18 @@ export const clearAll = () => {
   }
 }
 
-export const decimalPoint = () => {
+export const decimalPoint = (func) => {
   return {
     type: DEC,
+    payload: {
+      func: func
+    }
   }
 }
 
-export const EQ = (func) => {
+export const equals = (func) => {
   return{
-    type: 'CLEAR',
+    type: EQ,
     payload: {
       func: func
     }
