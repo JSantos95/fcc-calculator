@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Cbuttons from './Cbuttons';
+import CalButtons from './CalButtons';
 import '../styles/style.css';
 import {numberArray, operationArray} from './buttonArrays';
 
@@ -8,13 +8,13 @@ const App = () => {
   const [history, setHistory] = useState([0]);
 
   const funcButtons = operationArray.map((obj) =>
-    <Cbuttons
+    <CalButtons
       id={obj.id}
       func={obj.func}
     />
   )
   const numButtons = numberArray.map((obj) =>
-    <Cbuttons
+    <CalButtons
       id={obj.id}
       func={obj.num}
     />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cbuttons = (props) => {
+const CalButtons = (props) => {
   return (
     <button className="cal-button--actual" id={props.id}>
       {props.func}
@@ -8,4 +8,4 @@ const Cbuttons = (props) => {
   )
 }
 
-export default Cbuttons;
+export default CalButtons;
