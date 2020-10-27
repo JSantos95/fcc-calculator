@@ -1,4 +1,4 @@
-import { NUMBER, OP, CLEAR, DEC, EQ } from 'actionTypes';
+import { NUMBER, OP, CLEAR, DEC, EQ } from './actionTypes';
 
 export const addNumber = (num) => {
   return {
