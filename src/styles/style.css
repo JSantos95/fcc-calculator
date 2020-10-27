@@ -18,6 +18,7 @@
 .cal-board {
   color: white;
   border: 5px solid #080808;
+  background-color: #080808;
   position: relative;
 }
 
@@ -30,6 +31,7 @@
 .cal-value--array {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  margin: 0;
 }
 
 .cal-buttons {
