@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CalButtons from './CalButtons';
 import Output from './Output';
 import '../styles/style.css';
@@ -8,12 +8,14 @@ const App = () => {
 
   const funcButtons = operationArray.map((obj) =>
     <CalButtons
+      key={obj.id}
       id={obj.id}
       func={obj.func}
     />
   )
   const numButtons = numberArray.map((obj) =>
     <CalButtons
+      key={obj.id}
       id={obj.id}
       func={obj.num}
     />
