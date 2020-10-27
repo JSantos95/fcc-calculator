@@ -7,8 +7,8 @@ const CalButtons = (props) => {
   const dispatch = useDispatch();
 
   const actionCaller = () => {
-    if(props.num){
-      dispatch(addNumber(props.num));
+    if(typeof props.func === 'number'){
+      dispatch(addNumber(props.func));
     }else if (props.id === 'clear'){
       dispatch(clearAll());
     }else if (props.id === 'decimal'){
