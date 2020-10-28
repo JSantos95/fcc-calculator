@@ -39,3 +39,28 @@ export const isANegative = (arr) => {
 export const trim = (arr) => {
   return arr.slice(0, arr.length-1);
 }
+
+//
+export const newDecimal = (arr) => {
+  if(arr.length === 0){
+    return true;
+  }
+
+  let latestInput = arr[arr.length-1];
+  if(typeof latestInput === 'string'){
+    return true;
+  }
+}
+
+export const noDecimal = (arr) => {
+  for (var i = arr.length-1; i > 0; i--) {
+    if(typeof arr[i] === 'string'){
+      if(arr[i] === '.'){
+        return false;
+      } else {
+        return true;
+      }
+    }
+  }
+  return true;
+}
