@@ -38,7 +38,7 @@ export const doMath = (arr) => {
   //must be an array of 3 or more
   let op1, op2 , opR, cutArr;
 
-  if(arr[0] === 'string'){
+  if(arr[0] === '-'){
     op1 = 0 - arr[1];
     cutArr = arr.slice(2);
   }else if(arr[1] === '.'){
@@ -50,7 +50,8 @@ export const doMath = (arr) => {
   }
   opR = cutArr[0];
   cutArr = cutArr.slice(1);
-  if(cutArr[0] === 'string'){
+
+  if(cutArr[0] === '-'){
     op2 = 0 - cutArr[1];
     cutArr = cutArr.slice(2);
   }else if(cutArr[1] === '.'){
@@ -60,7 +61,7 @@ export const doMath = (arr) => {
     op2 = cutArr[0];
     cutArr = cutArr.slice(1);
   }
-  console.log("op1: " + op1 + " op2: " + op2 + " opR: " + opR);
+
   switch(opR){
     case "+":
       op1 += op2;
@@ -93,7 +94,6 @@ export const doMath = (arr) => {
     default:
       console.log("FAIL: operator: " + opR);
   }
-  console.log([op1].concat(cutArr))
   return doMath([op1].concat(cutArr));
 }
 
