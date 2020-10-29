@@ -14,4 +14,4 @@ I made this with create-react-app, you can find how to use it [here](https://rea
 
 I used the redux and react-redux packages, all on the package.json
 
-You can copy in the src files and public/index.html and this will work or click the [link](https://zen-booth-c36d01.netlify.app)
+You can copy in the src files and public/index.html and this will work or click the [link](https://zen-booth-c36d01.netlify.app) to see the live version
