@@ -60,13 +60,21 @@ export const doMath = (arr) => {
     op2 = cutArr[0];
     cutArr = cutArr.slice(1);
   }
-
+  console.log("op1: " + op1 + " op2: " + op2 + " opR: " + opR);
   switch(opR){
     case "+":
       op1 += op2;
+      if((op1 % 1).toString().length > 4){
+        //rounds to 4 decimal places
+        op1 = Number(op1.toFixed(4));
+      }
       break;
     case "x":
       op1 *= op2;
+      if((op1 % 1).toString().length > 4){
+        //rounds to 4 decimal places
+        op1 = Number(op1.toFixed(4));
+      }
       break;
     case "/":
       op1 /= op2;
@@ -77,6 +85,10 @@ export const doMath = (arr) => {
       break;
     case "-":
       op1 -= op2;
+      if((op1 % 1).toString().length > 4){
+        //rounds to 4 decimal places
+        op1 = Number(op1.toFixed(4));
+      }
       break;
     default:
       console.log("FAIL: operator: " + opR);
