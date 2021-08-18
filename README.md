@@ -1,4 +1,4 @@
-# React Calculator
+# React & Redux Calculator
 
 This is a Javascript Calculator I made using Reactjs and Redux. I followed the guidelines from freecodecode, found [here](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator)
 
